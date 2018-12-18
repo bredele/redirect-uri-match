@@ -1,0 +1,32 @@
+{
+  "name": "redirect-uri-match",
+  "version": "1.0.0",
+  "description": "Validate a redirection URI query parameter with a whitelist of URIs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/redirect-uri-validation.git"
+  },
+  "keywords": [
+    "redirect",
+    "uri",
+    "match",
+    "validate",
+    "oauth"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/redirect-uri-validation/issues"
+  },
+  "homepage": "https://github.com/bredele/redirect-uri-validation#readme",
+  "devDependencies": {
+    "tape": "^4.9.1"
+  }
+}
