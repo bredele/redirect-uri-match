@@ -1,8 +1,8 @@
-# redirect-uri-validation
+# redirect-uri-match
 
-[![Build Status](https://travis-ci.org/bredele/redirect-uri-validation.svg?branch=master)](https://travis-ci.org/bredele/redirect-uri-validation)
- [![NPM](https://img.shields.io/npm/v/redirect-uri-validation.svg)](https://www.npmjs.com/package/redirect-uri-validation)
- [![Downloads](https://img.shields.io/npm/dm/redirect-uri-validation.svg)](http://npm-stat.com/charts.html?package=redirect-uri-validation)
+[![Build Status](https://travis-ci.org/bredele/redirect-uri-match.svg?branch=master)](https://travis-ci.org/bredele/redirect-uri-match)
+ [![NPM](https://img.shields.io/npm/v/redirect-uri-match.svg)](https://www.npmjs.com/package/redirect-uri-match)
+ [![Downloads](https://img.shields.io/npm/dm/redirect-uri-match.svg)](http://npm-stat.com/charts.html?package=redirect-uri-match)
  [![pledge](https://bredele.github.io/contributing-guide/community-pledge.svg)](https://github.com/bredele/contributing-guide/blob/master/guidelines.md)
 
 Validate a redirection URI query parameter with a whitelist of URIs
@@ -10,7 +10,7 @@ Validate a redirection URI query parameter with a whitelist of URIs
 ## Usage
 
 ```js
-const validate = require('redirect-uri-validation')
+const validate = require('redirect-uri-match')
 
 // validate redirect_uri
 validate('https://www.world.com?redirect_uri=https://hello.com', 'https://hello.com')
@@ -38,10 +38,10 @@ validate('https://www.world.com?redirection=https://hello.com', 'https://hello.c
 ## Installation
 
 ```shell
-npm install redirect-uri-validation --save
+npm install redirect-uri-match --save
 ```
 
-[![NPM](https://nodei.co/npm/redirect-uri-validation.png)](https://nodei.co/npm/redirect-uri-validation/)
+[![NPM](https://nodei.co/npm/redirect-uri-match.png)](https://nodei.co/npm/redirect-uri-match/)
 
 
 ## Question
@@ -51,7 +51,7 @@ For questions and feedback please use our [twitter account](https://twitter.com/
 
 ## Contribution
 
-redirect-uri-validation is an open source project and would not exist without its community. If you want to participate please make sure to read our <a href="https://github.com/bredele/contributing-guide/blob/master/guidelines.md" target="_blank">guideline</a> before making a pull request. If you have any redirect-uri-validation related project, component or other let everyone know in our wiki.
+redirect-uri-match is an open source project and would not exist without its community. If you want to participate please make sure to read our <a href="https://github.com/bredele/contributing-guide/blob/master/guidelines.md" target="_blank">guideline</a> before making a pull request. If you have any redirect-uri-match related project, component or other let everyone know in our wiki.
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "redirect-uri-match",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validate a redirection URI query parameter with a whitelist of URIs",
   "main": "index.js",
   "directories": {
