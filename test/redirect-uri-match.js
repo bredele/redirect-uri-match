@@ -50,3 +50,18 @@ test('should match redirect_uri when URI contains multiple query parameters', as
     true
   )
 })
+
+test('should configure parameter name', assert => {
+  assert.plan(2)
+  assert.equal(
+    validate('https://test.com?redirection=https://www.hello.com/super&state=10', [
+      'https://www.hello.com',
+      'https://www.hello.com/super'
+    ]),
+    false
+  )
+  assert.equal(
+    validate('https://test.com?redirection=https://www.hello.com/super&state=10', 'https://www.hello.com/super', 'redirection'),
+    true
+  )
+})
