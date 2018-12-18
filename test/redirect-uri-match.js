@@ -39,3 +39,14 @@ test('should match redirect_uri with whitelist', assert => {
     true
   )
 })
+
+test('should match redirect_uri when URI contains multiple query parameters', assert => {
+  assert.plan(1)
+  assert.equal(
+    validate('https://test.com?redirect_uri=https://www.hello.com/super&state=10', [
+      'https://www.hello.com',
+      'https://www.hello.com/super'
+    ]),
+    true
+  )
+})
