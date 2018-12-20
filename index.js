@@ -2,11 +2,20 @@
  * Dependency
  */
 
-const url = require('url')
-const querystring = require('querystring')
+const match = require('uri-params-match')
+
+/**
+ * Match redirect_uri query parameters with redirection URI or array of possible
+ * redirection URIs.
+ *
+ * @param {String} ury
+ * @param {String|Array} redirect
+ * @param {String?} param
+ * @api public
+ */
 
 module.exports = (uri, redirect, param = 'redirect_uri') => {
-  const parser = url.parse(uri)
-  const params = querystring.parse(parser.query)
-  return [].concat(redirect).indexOf(params[param]) > -1
+  return match(uri, {
+    [param]: redirect
+  })
 }
